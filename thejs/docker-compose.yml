@@ -1,0 +1,8 @@
+version: '3'
+services:
+ web:
+   build: .
+   ports:
+    - "8086:3000"
+   volumes:
+    - ./flag_thepr0t0js:/flag_thepr0t0js

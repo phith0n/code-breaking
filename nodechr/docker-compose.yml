@@ -1,0 +1,8 @@
+version: '3'
+services:
+ web:
+   build: .
+   ports:
+    - "8085:3000"
+   volumes:
+    - ./config.json:/usr/config.json

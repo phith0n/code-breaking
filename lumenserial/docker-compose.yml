@@ -1,0 +1,11 @@
+version: '3'
+services:
+ web:
+   build: .
+   env_file:
+    - ./envfile
+   ports:
+    - "8080:80"
+   volumes:
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
+    - ./flag_larave1_b0ne:/var/www/flag_larave1_b0ne

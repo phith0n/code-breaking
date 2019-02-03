@@ -1,0 +1,9 @@
+version: '3'
+services:
+ web:
+   build: .
+   ports:
+    - "8087:80"
+   volumes:
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
+    - ./flag_h0w2execute_arb1trary_c0de:/var/www/flag_h0w2execute_arb1trary_c0de

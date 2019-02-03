@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "username": "ADMIN",
+            "password": "ADMIN"
+        }
+    ],
+    "signed": [
+        "C4n",
+        "Y0u",
+        "Wr1te",
+        "Java5cr1pt",
+        "?"
+    ],
+    "flag": "flag{8640bf2dc4aac43e92c19e0404464394}"
+}

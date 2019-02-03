@@ -1,0 +1,9 @@
+version: '3'
+services:
+ web:
+   build: .
+   volumes:
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
+    - ./flag_php7_2_1s_c0rrect:/var/www/flag_php7_2_1s_c0rrect
+   ports:
+    - "8088:80"

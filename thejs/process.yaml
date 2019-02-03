@@ -1,0 +1,8 @@
+apps:
+  - name: thejs
+    script: server.js
+    cwd: ./web
+    instances: 1
+    exec_mode: cluster
+    watch: false
+    cron_restart: "*/3 * * * *"

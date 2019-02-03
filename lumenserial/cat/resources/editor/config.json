@@ -1,0 +1,40 @@
+/* 前后端通信相关的配置,注释只允许使用多行方式 */
+{
+  /* 上传图片配置项 */
+  "imageActionName": "uploadimage", /* 执行上传图片的action名称 */
+  "imageFieldName": "upfile", /* 提交的图片表单名称 */
+  "imageMaxSize": 2097152, /* 上传大小限制，单位kb */
+  "imageAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"], /* 上传图片格式显示 */
+  "imageCompressEnable": true, /* 是否压缩图片,默认是true */
+  "imageCompressBorder": 1600, /* 图片压缩最长边限制 */
+  "imageInsertAlign": "none", /* 插入的图片浮动方式 */
+  "imageUrlPrefix": "", /* 图片访问路径前缀 */
+  "imagePathFormat": "/upload/image/{iphash}/{yyyy}{mm}/{dd}/", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+  /* {filename} 会替换成原文件名,配置这项需要注意中文乱码问题 */
+  /* {rand:6} 会替换成随机数,后面的数字是随机数的位数 */
+  /* {time} 会替换成时间戳 */
+  /* {yyyy} 会替换成四位年份 */
+  /* {yy} 会替换成两位年份 */
+  /* {mm} 会替换成两位月份 */
+  /* {dd} 会替换成两位日期 */
+  /* {hh} 会替换成两位小时 */
+  /* {ii} 会替换成两位分钟 */
+  /* {ss} 会替换成两位秒 */
+  /* 非法字符 \ : * ? " < > | */
+  /* 具请体看线上文档: fex.baidu.com/ueditor/#use-format_upload_filename */
+  /* 抓取远程图片配置 */
+  "catcherLocalDomain": ["127.0.0.1", "localhost", "img.baidu.com"],
+  "catcherActionName": "catchimage", /* 执行抓取远程图片的action名称 */
+  "catcherFieldName": "source", /* 提交的图片列表表单名称 */
+  "catcherPathFormat": "/upload/image/{iphash}/{yyyy}{mm}/{dd}/", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+  "catcherUrlPrefix": "", /* 图片访问路径前缀 */
+  "catcherMaxSize": 2097152, /* 上传大小限制，单位B */
+  "catcherAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"], /* 抓取图片格式显示 */
+  /* 列出指定目录下的图片 */
+  "imageManagerActionName": "listimage", /* 执行图片管理的action名称 */
+  "imageManagerListPath": "/upload/image/{iphash}/", /* 指定要列出图片的目录 */
+  "imageManagerListSize": 20, /* 每次列出文件数量 */
+  "imageManagerUrlPrefix": "", /* 图片访问路径前缀 */
+  "imageManagerInsertAlign": "none", /* 插入的图片浮动方式 */
+  "imageManagerAllowFiles": [".png", ".jpg", ".jpeg", ".gif", ".bmp"] /* 列出的文件类型 */
+}

@@ -1,0 +1,11 @@
+version: '2'
+services:
+ web:
+   image: openjdk:8-jre
+   ports:
+    - "8081:8080"
+   volumes:
+    - ./challenge-0.0.1-SNAPSHOT.jar:/challenge-0.0.1-SNAPSHOT.jar
+    - ./flag_j4v4_chun:/flag_j4v4_chun
+   user: nobody
+   command: java -Djava.security.egd=file:/dev/./urandom -jar /challenge-0.0.1-SNAPSHOT.jar

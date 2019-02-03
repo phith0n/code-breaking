@@ -1,0 +1,12 @@
+version: '3'
+services:
+ web:
+   build: .
+   ports:
+    - "8082:80"
+   volumes:
+    - ./sandbox.ini:/usr/local/etc/php/conf.d/sandbox.ini
+    - ./flag_phpmag1c_ur1:/var/www/flag_phpmag1c_ur1
+   dns:
+    - 223.5.5.5
+    - 223.6.6.6
