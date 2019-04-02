@@ -10,7 +10,6 @@ RUN set -ex \
         make \
         g++ \
     && cd /usr/src \
-    && rm yarn.lock \
     && yarn install --production --network-timeout 30000 \
     && apk del .gyp
 
