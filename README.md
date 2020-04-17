@@ -39,6 +39,6 @@ docker-compose up -d
 
 2020年题目（不再举办统一比赛，题目陆续发出）：
 
-- [medium / bash / bashinj](2020/bashinj)
+- [easy / bash / bashinj](2020/bashinj)
 
 2020年题目运行方法请直接在具体题目页面查看。
