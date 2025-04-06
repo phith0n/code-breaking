@@ -1,0 +1,5 @@
+target/
+.idea/
+Dockerfile
+poc.py
+poc.xml

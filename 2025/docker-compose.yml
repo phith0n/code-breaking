@@ -1,0 +1,14 @@
+services:
+  web:
+    image: vulhub/ctf:2025-jdbc
+    ports:
+      - "8080:8080"
+    networks:
+      - ctf
+
+networks:
+  ctf:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/16
